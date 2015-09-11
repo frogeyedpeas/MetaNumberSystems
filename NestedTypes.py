@@ -44,7 +44,7 @@ def buildpath(q, glob):
             x.add_edge(pydot.Edge(nodearr[i-1],nodearr[i]))
         i+=1
     if len(nodearr)>0:
-        return [x,nodearr[i-1]]
+        return [x,nodearr[i-1],nodearr[0]]
     else:
         return [x]
 
